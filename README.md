@@ -1379,7 +1379,7 @@ A stylized table of text elements.
 
 A box which spins up a pseudo terminal and renders the output. Useful for
 writing a terminal multiplexer, or something similar to an mc-like file
-manager. Requires term.js and pty.js to be installed. See
+manager. Requires term.js and node-pty to be installed. See
 `example/multiplex.js` for an example terminal multiplexer.
 
 ##### Options:
@@ -1397,7 +1397,7 @@ manager. Requires term.js and pty.js to be installed. See
 
 - Inherits all from Box.
 - __term__ - Reference to the headless term.js terminal.
-- __pty__ - Reference to the pty.js pseudo terminal.
+- __pty__ - Reference to the node-pty pseudo terminal.
 
 ##### Events:
 

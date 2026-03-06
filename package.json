@@ -6,7 +6,7 @@
     "lint": "eslint lib/",
     "deploy": "git push && git push --tags && npm publish"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "./lib/blessed.js",
   "bin": "./bin/tput.js",
@@ -31,7 +31,7 @@
     "termcap"
   ],
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">=18.0.0"
   },
   "browserify": {
     "transform": [
@@ -39,10 +39,12 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^5.10.0"
+    "eslint": "^8.57.1"
   },
   "dependencies": {
-    "node-pty": "^0.9.0",
     "term.js": "0.0.7"
+  },
+  "optionalDependencies": {
+    "node-pty": "^1.0.0"
   }
 }

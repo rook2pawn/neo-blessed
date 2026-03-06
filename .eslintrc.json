@@ -19,6 +19,51 @@
   },
   "plugins": [
   ],
+  "overrides": [
+    {
+      "files": [
+        "lib/program.js",
+        "lib/tput.js",
+        "lib/keys.js",
+        "lib/unicode.js",
+        "lib/widgets/element.js",
+        "lib/widgets/screen.js"
+      ],
+      "rules": {
+        "block-scoped-var": "off",
+        "complexity": "off",
+        "default-case": "off",
+        "func-name-matching": "off",
+        "max-depth": "off",
+        "no-cond-assign": "off",
+        "no-fallthrough": "off",
+        "no-implicit-coercion": "off",
+        "no-labels": "off",
+        "no-mixed-requires": "off",
+        "no-nested-ternary": "off",
+        "no-new-func": "off",
+        "no-return-assign": "off",
+        "no-self-assign": "off",
+        "no-self-compare": "off",
+        "no-sequences": "off",
+        "no-unused-expressions": "off",
+        "no-useless-concat": "off"
+      }
+    },
+    {
+      "files": [
+        "lib/colors.js",
+        "lib/widgets/form.js",
+        "lib/widgets/list.js",
+        "lib/widgets/message.js",
+        "lib/widgets/scrollablebox.js"
+      ],
+      "rules": {
+        "complexity": "off",
+        "max-depth": "off"
+      }
+    }
+  ],
   "rules": {
     "accessor-pairs": "error",
     "array-bracket-newline": "error",
@@ -65,7 +110,13 @@
     ],
     "dot-notation": "off",
     "eol-last": "error",
-    "eqeqeq": "error",
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
     "for-direction": "error",
     "func-call-spacing": "error",
     "func-name-matching": "error",
@@ -87,10 +138,7 @@
     "key-spacing": "off",
     "keyword-spacing": "off",
     "line-comment-position": "off",
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
+    "linebreak-style": "off",
     "lines-around-comment": "error",
     "lines-around-directive": "error",
     "max-depth": "error",
@@ -122,7 +170,8 @@
     "no-duplicate-imports": "error",
     "no-else-return": 2,
     "no-empty-function": "off",
-    "no-eq-null": "error",
+    "no-control-regex": "off",
+    "no-eq-null": "off",
     "no-eval": "off",
     "no-extend-native": "error",
     "no-extra-bind": "error",
