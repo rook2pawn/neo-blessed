@@ -1,7 +1,7 @@
 {
-  "name": "@blessed/neo-blessed",
+  "name": "@rook2pawn/neo-blessed",
   "description": "A fork of the original blessed with bug fixes and maintenance.",
-  "author": "Rajasegar Chandran",
+  "author": "David Wee <rook2pawn@gmail.com",
   "scripts": {
     "lint": "eslint lib/",
     "deploy": "git push && git push --tags && npm publish"
