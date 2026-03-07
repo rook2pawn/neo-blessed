@@ -1,16 +1,19 @@
 # neo-blessed
 
-This is a fork of neo-blessed - modernized to v22 NodeJS and above - using recent node-pty circa 2026
+This is a maintained fork of neo-blessed, modernized for current Node.js versions (including Node 22) and updated `node-pty` compatibility.
 
-![Build and Deploy](https://github.com/blessedjs/neo-blessed/workflows/Build%20and%20Deploy/badge.svg)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Repository](https://img.shields.io/badge/github-rook2pawn%2Fneo--blessed-24292e?logo=github)](https://github.com/rook2pawn/neo-blessed)
 [![npm version](http://img.shields.io/npm/v/@blessed/neo-blessed.svg?style=flat)](https://npmjs.org/package/@blessed/neo-blessed "View this project on npm")
 
 A fork of the original blessed with bug fixes and maintenance.
 
 A curses-like library with a high level terminal interface API for node.js.
 
-![blessed](https://raw.githubusercontent.com/chjj/blessed/master/img/v0.1.0-3.gif)
+- Repository: https://github.com/rook2pawn/neo-blessed
+- Issues: https://github.com/rook2pawn/neo-blessed/issues
+- Package: https://www.npmjs.com/package/@blessed/neo-blessed
+
+![blessed](./img/v0.1.0-3.gif)
 
 Blessed is over 16,000 lines of code and terminal goodness. It's completely
 implemented in javascript, and its goal consists of two things:
@@ -130,6 +133,8 @@ screen.render();
 ```
 
 ## Documentation
+
+Maintenance and modernization notes are tracked in [MAINTENANCE.md](./MAINTENANCE.md).
 
 ### Widgets
 
@@ -522,7 +527,7 @@ The base element.
   - **type** - Type of border (`line` or `bg`). `bg` by default.
   - **ch** - Character to use if `bg` type, default is space.
   - **bg, fg** - Border foreground and background, can be strings or numbers (-1 for
-    default). See [Colors](https://github.com/chjj/blessed#colors-1 "Colors").
+    default). See [Colors](#colors-1 "Colors").
   - **bold, underline** - Border attributes.
 - **style** - Contains attributes (e.g. `fg/bg/underline`). See above.
 - **position** - Raw width, height, and offsets.
@@ -532,7 +537,7 @@ The base element.
 - **detached** - Whether the element is attached to a screen in its ancestry
   somewhere.
 - **fg, bg** - Foreground and background, can be strings or numbers (-1 for
-  default). See [Colors](https://github.com/chjj/blessed#colors-1 "Colors").
+  default). See [Colors](#colors-1 "Colors").
 - **bold, underline** - Attributes.
 - **width** - Calculated width.
 - **height** - Calculated height.

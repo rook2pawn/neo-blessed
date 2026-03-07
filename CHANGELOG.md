@@ -1,6 +1,6 @@
 # Blessed v0.1.0 - new terminal goodies for node.js
 
-![blessed](https://raw.githubusercontent.com/chjj/blessed/master/img/v0.1.0-3.gif)
+![blessed](./img/v0.1.0-3.gif)
 
 The features demonstrated in the above gif __element transparency/shadow__ and
 __border docking__.
@@ -48,7 +48,7 @@ __border docking__.
   similar to how a web browser handles the "title" attribute. (see widget.js)
 
 - __`Terminal` element__ - Spin up a pseudo terminal as a blessed element.
-  useful for writing a terminal multiplexer. (requires term.js and pty.js as
+  useful for writing a terminal multiplexer. (requires term.js and node-pty as
   optional dependencies). (see example/multiplex.js)
 
 - __`Image` element__ - Uses `w3mimgdisplay` to draw real images your terminal.
